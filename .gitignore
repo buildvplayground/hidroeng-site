@@ -1,0 +1,27 @@
+# Material bruto e pesado — não versionar
+_raw/
+imagens/
+Marca/
+Copys/
+design-system/
+Site/
+brief-pack.md
+*.psd
+*.ai
+
+# Segredos — NUNCA versionar (só o .example)
+db-config.php
+.env
+.env.*
+!.env.example
+*-secret*
+*credenciais*
+
+# Build/infra
+node_modules/
+.vercel/
+.DS_Store
+*.log
+
+# Uploads reais do servidor
+uploads/

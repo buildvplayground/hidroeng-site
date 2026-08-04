@@ -1,0 +1,33 @@
+{
+  "cliente": "Hidroeng Projetos e Consultoria",
+  "slug": "hidroeng",
+  "segmento": "Engenharia de saneamento (água, esgoto, recursos hídricos)",
+  "etapa_atual": 3,
+  "etapas": [
+    { "n": 1, "nome": "Extrair do Drive", "status": "done" },
+    { "n": 2, "nome": "Organizar pastas (scaffold)", "status": "done" },
+    { "n": "2b", "nome": "Repo GitHub", "status": "pending" },
+    { "n": 3, "nome": "Design system", "status": "doing" },
+    { "n": 4, "nome": "Extrair copy", "status": "pending" },
+    { "n": 5, "nome": "Front-end", "status": "pending" },
+    { "n": 6, "nome": "Ajustes finais", "status": "pending" },
+    { "n": 7, "nome": "Tags e módulos", "status": "pending" },
+    { "n": 8, "nome": "Revisão humana", "status": "pending" },
+    { "n": 9, "nome": "Deploy", "status": "blocked" }
+  ],
+  "pendencias": [
+    "Hospedagem não definida (Vercel/Hostinger) — front-end seguirá padrão HTML estático",
+    "Número de WhatsApp real para CTA (placeholder 5562983407559 usado a partir do telefone do portfólio — confirmar)",
+    "GTM/GA4/Pixel IDs não fornecidos — instalar-tags pulada",
+    "Merlin ID não fornecido — instalar-merlin pulada",
+    "Planilha Aprofundamento com dados divergentes (outro segmento) — cliente deve preencher com dados reais da Hidroeng",
+    "Domínio a confirmar (atual: www.hidroengenharia.com.br)"
+  ],
+  "links": {
+    "drive": "https://drive.google.com/drive/folders/1Cd1GwixoLkIgtTY4eJ-gw97eCZv03UcC",
+    "repo": null,
+    "preview": null,
+    "dominio": "www.hidroengenharia.com.br"
+  },
+  "atualizado_em": "2026-08-04"
+}
