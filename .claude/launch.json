@@ -1,0 +1,12 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "hidroeng-site",
+      "runtimeExecutable": "node",
+      "runtimeArgs": ["preview-server.js"],
+      "port": 8791,
+      "autoPort": true
+    }
+  ]
+}
