@@ -2,32 +2,36 @@
   "cliente": "Hidroeng Projetos e Consultoria",
   "slug": "hidroeng",
   "segmento": "Engenharia de saneamento (água, esgoto, recursos hídricos)",
-  "etapa_atual": 3,
+  "etapa_atual": 8,
   "etapas": [
     { "n": 1, "nome": "Extrair do Drive", "status": "done" },
     { "n": 2, "nome": "Organizar pastas (scaffold)", "status": "done" },
-    { "n": "2b", "nome": "Repo GitHub", "status": "pending" },
-    { "n": 3, "nome": "Design system", "status": "doing" },
-    { "n": 4, "nome": "Extrair copy", "status": "pending" },
-    { "n": 5, "nome": "Front-end", "status": "pending" },
-    { "n": 6, "nome": "Ajustes finais", "status": "pending" },
-    { "n": 7, "nome": "Tags e módulos", "status": "pending" },
-    { "n": 8, "nome": "Revisão humana", "status": "pending" },
+    { "n": "2b", "nome": "Repo GitHub", "status": "done" },
+    { "n": 3, "nome": "Design system", "status": "done" },
+    { "n": 4, "nome": "Extrair copy", "status": "done" },
+    { "n": 5, "nome": "Front-end (gerar + revisar, 0 bloqueantes)", "status": "done" },
+    { "n": 6, "nome": "Ajustes finais (webp -86%, overflow 0 em 320-1280)", "status": "done" },
+    { "n": 7, "nome": "Módulos LGPD instalados; tags/merlin puladas (sem IDs)", "status": "done" },
+    { "n": 8, "nome": "Revisão humana", "status": "doing" },
     { "n": 9, "nome": "Deploy", "status": "blocked" }
   ],
   "pendencias": [
-    "Hospedagem não definida (Vercel/Hostinger) — front-end seguirá padrão HTML estático",
-    "Número de WhatsApp real para CTA (placeholder 5562983407559 usado a partir do telefone do portfólio — confirmar)",
-    "GTM/GA4/Pixel IDs não fornecidos — instalar-tags pulada",
-    "Merlin ID não fornecido — instalar-merlin pulada",
-    "Planilha Aprofundamento com dados divergentes (outro segmento) — cliente deve preencher com dados reais da Hidroeng",
-    "Domínio a confirmar (atual: www.hidroengenharia.com.br)"
+    "Confirmar número de WhatsApp real (placeholder atual: 5562983407559, derivado do telefone do portfólio — constante WA_NUMBER em Site/js/app.js)",
+    "Definir hospedagem (Hostinger/Vercel/outra) — front-end é HTML estático + backend PHP; se Vercel, formulários PHP precisam migrar para serverless",
+    "Definir domínio (atual do cliente: www.hidroengenharia.com.br) e apontamento DNS",
+    "Fornecer IDs de GTM/GA4/Pixel para instalar-tags (banner de cookies já emite evento cookie_consent no dataLayer)",
+    "Fornecer ID do Merlin (popup) se contratado",
+    "No deploy: criar banco MySQL, copiar db-config.example.php → db-config.php preenchido e trocar PROJETO_ADMIN_PASS",
+    "Secrets de deploy (FTP_HOST/FTP_USER/FTP_PASSWORD se Hostinger)",
+    "Planilha 'Aprofundamento' do Drive contém dados de outro segmento (obras residenciais/SP) — cliente deve preenchê-la com dados reais da Hidroeng",
+    "Pastas do Drive 'Criativos', 'Site (Copy + Backup Site Antigo)' e 'Revisões' estão vazias — sem wireframes; copy veio 100% do portfólio institucional",
+    "Painel BuildV (_painel/build.py) não existe nesta máquina — estado atualizado só em state.json/PROJETO.md"
   ],
   "links": {
     "drive": "https://drive.google.com/drive/folders/1Cd1GwixoLkIgtTY4eJ-gw97eCZv03UcC",
-    "repo": null,
-    "preview": null,
-    "dominio": "www.hidroengenharia.com.br"
+    "repo": "https://github.com/dev-buildv/hidroeng-site",
+    "preview": "http://localhost:60205 (node preview-server.js)",
+    "dominio": "www.hidroengenharia.com.br (a confirmar)"
   },
   "atualizado_em": "2026-08-04"
 }
