@@ -16,7 +16,7 @@
     { "n": 9, "nome": "Deploy", "status": "blocked" }
   ],
   "pendencias": [
-    "Confirmar número de WhatsApp real (placeholder atual: 5562983407559, derivado do telefone do portfólio — constante WA_NUMBER em Site/js/app.js)",
+    "Confirmar se o telefone fixo da seção de contato segue (62) 9 8340-7559 (do portfólio) — WhatsApp dos CTAs já atualizado para (62) 99934-5568",
     "Definir hospedagem (Hostinger/Vercel/outra) — front-end é HTML estático + backend PHP; se Vercel, formulários PHP precisam migrar para serverless",
     "Definir domínio (atual do cliente: www.hidroengenharia.com.br) e apontamento DNS",
     "No painel do GTM: configurar gatilhos das tags (GA4/Pixel/Ads) escutando o evento cookie_consent do dataLayer (LGPD)",

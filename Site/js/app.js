@@ -2,13 +2,13 @@
 (function () {
   'use strict';
 
-  /* TODO(pendência): confirmar número de WhatsApp real com o cliente */
-  var WA_NUMBER = '5562983407559';
+  var WA_NUMBER = '5562999345568'; /* WhatsApp comercial confirmado pelo cliente */
   var WA_MSG = {
     'hero': 'Olá! Vim pelo site da Hidroeng e gostaria de falar com um engenheiro sobre um projeto.',
     'menu': 'Olá! Vim pelo site da Hidroeng e gostaria de solicitar um orçamento.',
     'servicos': 'Olá! Gostaria de um orçamento para projetos de saneamento (água/esgoto/estudos técnicos).',
-    'cta-final': 'Olá! Quero discutir meu próximo projeto de saneamento com a Hidroeng.'
+    'cta-final': 'Olá! Quero discutir meu próximo projeto de saneamento com a Hidroeng.',
+    'float': 'Olá! Vim pelo site da Hidroeng e gostaria de mais informações.'
   };
 
   var docEl = document.documentElement;

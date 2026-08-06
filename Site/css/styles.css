@@ -221,6 +221,12 @@ p strong,.lede strong{color:var(--ink)}
 .lb-next{right:22px;top:50%;transform:translateY(-50%)}
 .lightbox.single .lb-prev,.lightbox.single .lb-next{display:none}
 
+/* ---------- Botão flutuante de WhatsApp ---------- */
+.wa-float{position:fixed;right:20px;bottom:20px;z-index:650;width:56px;height:56px;border-radius:50%;background:#25D366;color:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 22px rgba(18,140,66,.45);transition:transform var(--t-base),box-shadow var(--t-base)}
+.wa-float:hover{transform:translateY(-3px) scale(1.05);box-shadow:0 12px 30px rgba(18,140,66,.55)}
+.wa-float:active{transform:scale(.96)}
+@media (max-width:560px){.wa-float{right:14px;bottom:14px;width:52px;height:52px}}
+
 /* ---------- Política de Privacidade + Cookie Notice (BuildV) ---------- */
 .privacy-overlay{position:fixed;inset:0;z-index:900;background:rgba(6,16,28,.82);backdrop-filter:blur(6px);display:flex;align-items:center;justify-content:center;padding:20px;opacity:0;pointer-events:none;transition:opacity .3s ease}
 .privacy-overlay.open{opacity:1;pointer-events:all}
