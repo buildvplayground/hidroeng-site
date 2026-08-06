@@ -111,12 +111,13 @@ p strong,.lede strong{color:var(--ink)}
 
 /* ---------- Serviços ---------- */
 .svc-list{display:grid;gap:18px}
-.svc{display:flex;gap:20px;align-items:flex-start;background:#fff;border:1px solid var(--gray-100);border-radius:var(--radius-lg);padding:22px 24px;box-shadow:var(--shadow-sm);transition:transform var(--t-base),box-shadow var(--t-base)}
+.svc{display:grid;grid-template-columns:1.15fr minmax(280px,.85fr);background:#fff;border:1px solid var(--gray-100);border-radius:var(--radius-lg);padding:0;overflow:hidden;box-shadow:var(--shadow-sm);transition:transform var(--t-base),box-shadow var(--t-base)}
+.svc-body{display:flex;gap:20px;align-items:flex-start;padding:26px 28px}
 .svc:hover{transform:translateY(-3px);box-shadow:var(--shadow-md)}
 .svc-n{font-family:var(--font-display);font-weight:800;font-size:13.5px;color:var(--blue-600);border:2px solid var(--blue-100);border-radius:9px;padding:6px 10px;flex:none}
 .svc-ico{color:var(--blue-600);flex:none;margin-top:4px}
-.svc>div{flex:1;min-width:240px}
-.svc-media{flex:none;width:210px;align-self:stretch;min-height:112px;border-radius:10px;overflow:hidden;margin-left:auto}
+.svc-body>div{flex:1;min-width:220px}
+.svc-media{width:100%;height:100%;min-height:210px;margin:0;border-radius:0;overflow:hidden}
 .svc-media img{width:100%;height:100%;object-fit:cover;transition:transform .6s var(--e-reveal)}
 .svc:hover .svc-media img{transform:scale(1.05)}
 .svc h3{font-size:17.5px;margin-bottom:5px}
@@ -273,7 +274,6 @@ p strong,.lede strong{color:var(--ink)}
   .cta-media img{position:absolute}
   .cta-content{padding:64px 24px}
   .footer-inner{grid-template-columns:1fr 1fr}
-  .svc{flex-wrap:wrap}
 }
 @media (max-width:560px){
   .section{padding:44px 0}
@@ -282,7 +282,9 @@ p strong,.lede strong{color:var(--ink)}
   .hero-inner{padding-top:112px}
   .hero-actions .btn{width:100%}
   .footer-inner{grid-template-columns:1fr}
-  .svc-media{width:100%;min-height:0;height:150px;margin-left:0;order:5}
+  .svc{grid-template-columns:1fr}
+  .svc-media{min-height:0;height:190px;order:-1}
+  .svc-body{flex-wrap:wrap;padding:20px 22px}
   .result-band{flex-direction:column;align-items:flex-start}
   .result-band .btn{width:100%}
   .howto-row{grid-template-columns:1fr;gap:20px}
