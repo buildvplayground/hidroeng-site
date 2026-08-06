@@ -28,6 +28,6 @@ Domínio atual: www.hidroengenharia.com.br
 - [x] 4. Copy estruturada por seção (Copys/copy-site.txt)
 - [x] 5. Front-end criado e auditado (revisar-frontend: 0 achados bloqueantes)
 - [x] 6. Ajustes finais (webp −86%, overflow 0 em 320/360/375/768/1280, menu+lightbox testados)
-- [x] 7. Módulos LGPD (cookies + privacidade + fornecedores + trabalhe-conosco + PHP); tags/merlin PULADAS (sem IDs)
+- [x] 7. Módulos LGPD (cookies + privacidade + fornecedores + trabalhe-conosco + PHP) + GTM (GTM-KDT36FWB nas 3 páginas); merlin PULADO (sem ID)
 - [ ] 8. 🛑 Revisão humana (preview: node preview-server.js → http://localhost:<porta>)
 - [ ] 9. Deploy (BLOQUEADO: hospedagem/domínio/secrets a definir)

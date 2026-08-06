@@ -11,7 +11,7 @@
     { "n": 4, "nome": "Extrair copy", "status": "done" },
     { "n": 5, "nome": "Front-end (gerar + revisar, 0 bloqueantes)", "status": "done" },
     { "n": 6, "nome": "Ajustes finais (webp -86%, overflow 0 em 320-1280)", "status": "done" },
-    { "n": 7, "nome": "Módulos LGPD instalados; tags/merlin puladas (sem IDs)", "status": "done" },
+    { "n": 7, "nome": "Módulos LGPD + GTM (GTM-KDT36FWB) instalados; merlin pulado (sem ID)", "status": "done" },
     { "n": 8, "nome": "Revisão humana", "status": "doing" },
     { "n": 9, "nome": "Deploy", "status": "blocked" }
   ],
@@ -19,7 +19,7 @@
     "Confirmar número de WhatsApp real (placeholder atual: 5562983407559, derivado do telefone do portfólio — constante WA_NUMBER em Site/js/app.js)",
     "Definir hospedagem (Hostinger/Vercel/outra) — front-end é HTML estático + backend PHP; se Vercel, formulários PHP precisam migrar para serverless",
     "Definir domínio (atual do cliente: www.hidroengenharia.com.br) e apontamento DNS",
-    "Fornecer IDs de GTM/GA4/Pixel para instalar-tags (banner de cookies já emite evento cookie_consent no dataLayer)",
+    "No painel do GTM: configurar gatilhos das tags (GA4/Pixel/Ads) escutando o evento cookie_consent do dataLayer (LGPD)",
     "Fornecer ID do Merlin (popup) se contratado",
     "No deploy: criar banco MySQL, copiar db-config.example.php → db-config.php preenchido e trocar PROJETO_ADMIN_PASS",
     "Secrets de deploy (FTP_HOST/FTP_USER/FTP_PASSWORD se Hostinger)",
