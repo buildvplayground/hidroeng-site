@@ -158,6 +158,38 @@
     counters.forEach(function (c) { cObs.observe(c); });
   }
 
+  /* ---------- Serviços: abas (desktop) / sanfona (mobile) ---------- */
+  var svcTabs = Array.prototype.slice.call(document.querySelectorAll('.svc-tab'));
+  if (svcTabs.length) {
+    var svcPanels = svcTabs.map(function (btn) {
+      return document.getElementById(btn.getAttribute('aria-controls'));
+    });
+    function svcSelect(idx, focus) {
+      svcTabs.forEach(function (btn, i) {
+        var on = i === idx;
+        btn.setAttribute('aria-expanded', on ? 'true' : 'false');
+        btn.classList.toggle('is-active', on);
+        if (svcPanels[i]) svcPanels[i].classList.toggle('is-active', on);
+      });
+      if (focus) svcTabs[idx].focus();
+    }
+    svcTabs.forEach(function (btn, i) {
+      btn.addEventListener('click', function () {
+        if (btn.getAttribute('aria-expanded') !== 'true') svcSelect(i, false);
+      });
+      btn.addEventListener('keydown', function (ev) {
+        var k = ev.key, next = -1;
+        if (k === 'ArrowDown' || k === 'ArrowRight') next = (i + 1) % svcTabs.length;
+        else if (k === 'ArrowUp' || k === 'ArrowLeft') next = (i - 1 + svcTabs.length) % svcTabs.length;
+        else if (k === 'Home') next = 0;
+        else if (k === 'End') next = svcTabs.length - 1;
+        if (next < 0) return;
+        ev.preventDefault();
+        svcSelect(next, true);
+      });
+    });
+  }
+
   /* ---------- Parallax leve (≤0.12) ---------- */
   var pxEls = Array.prototype.slice.call(document.querySelectorAll('[data-parallax]'));
   if (!reduceMotion && pxEls.length) {
