@@ -140,8 +140,17 @@ p strong,.lede strong{color:var(--ink)}
 .svc-items li{position:relative;padding-left:22px;font-size:14px;line-height:1.5;color:var(--gray-700)}
 .svc-items li::before{content:"";position:absolute;left:3px;top:.6em;width:6px;height:6px;border-radius:50%;background:var(--blue-500)}
 
+/* Sem JS: os botões não operam, então some o indicador */
+html:not(.js) .svc-tab{cursor:default}
+html:not(.js) .svc-tab-arrow{display:none}
+
 /* Com JS: sanfona de seleção única (só o ativo aberto) */
 html.js .svc-panel:not(.is-active){display:none}
+/* Mobile: o painel aberto encosta no seu cabeçalho */
+@media (max-width:900px){
+  html.js .svc-tab.is-active{border-bottom-left-radius:0;border-bottom-right-radius:0;border-bottom-color:transparent;box-shadow:none}
+  html.js .svc-panel.is-active{margin-top:-12px;border-top:0;border-top-left-radius:0;border-top-right-radius:0}
+}
 
 /* Com JS + desktop: vira painel de abas em 2 colunas */
 @media (min-width:901px){
